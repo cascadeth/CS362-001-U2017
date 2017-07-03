@@ -1,0 +1,102 @@
+* Starting client
+* Connecting to master process on port 13195
+* Analyzing classpath: 
+  - F:/NOS_SHARE/casca/Projects/GitRepos/CS362-001-U2017/projects/schmidtm/assignment-1/cs362/target/classes
+  - C:\Program Files\Java\jdk1.8.0_131\jre\lib\charsets.jar
+  - C:\Program Files\Java\jdk1.8.0_131\jre\lib\deploy.jar
+  - C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\access-bridge-64.jar
+  - C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\cldrdata.jar
+  - C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\dnsns.jar
+  - C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\jaccess.jar
+  - C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\jfxrt.jar
+  - C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\localedata.jar
+  - C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\nashorn.jar
+  - C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\sunec.jar
+  - C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\sunjce_provider.jar
+  - C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\sunmscapi.jar
+  - C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\sunpkcs11.jar
+  - C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext\zipfs.jar
+  - C:\Program Files\Java\jdk1.8.0_131\jre\lib\javaws.jar
+  - C:\Program Files\Java\jdk1.8.0_131\jre\lib\jce.jar
+  - C:\Program Files\Java\jdk1.8.0_131\jre\lib\jfr.jar
+  - C:\Program Files\Java\jdk1.8.0_131\jre\lib\jfxswt.jar
+  - C:\Program Files\Java\jdk1.8.0_131\jre\lib\jsse.jar
+  - C:\Program Files\Java\jdk1.8.0_131\jre\lib\management-agent.jar
+  - C:\Program Files\Java\jdk1.8.0_131\jre\lib\plugin.jar
+  - C:\Program Files\Java\jdk1.8.0_131\jre\lib\resources.jar
+  - C:\Program Files\Java\jdk1.8.0_131\jre\lib\rt.jar
+  - F:\NOS_SHARE\casca\Projects\GitRepos\CS362-001-U2017\projects\schmidtm\assignment-1\cs362\target\test-classes
+  - F:\NOS_SHARE\casca\Projects\GitRepos\CS362-001-U2017\projects\schmidtm\assignment-1\cs362\target\classes
+  - C:\Users\casca\.m2\repository\junit\junit\4.12\junit-4.12.jar
+  - C:\Users\casca\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar
+* Finished analyzing classpath
+* Generating tests for class edu.osu.cs362.Life
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Setting up search algorithm for whole suite generation
+* Loaded 11 tests from F:\NOS_SHARE\casca\Projects\GitRepos\CS362-001-U2017\projects\schmidtm\assignment-1\cs362\.evosuite\evosuite-seeds\edu.osu.cs362.Life.seed
+* Total number of test goals: 
+  - Line 47
+  - Branch 49
+  - Exception 0
+  - MutationFactory 323
+  - Output 8
+  - Method 6
+  - MethodNoException 6
+  - CBranchFitnessFactory 49
+* Using seed 1499057326035
+* Starting evolution
+* Search finished after 70s and 2 generations, 8436 statements, best individual has fitness: 30.0333333305389
+* Writing sequences to pool
+* Minimizing test suite
+[MASTER] 21:50:15.807 [pool-2-thread-1] WARN  TestSuiteMinimizer - Minimization timeout. Roll back to original test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 96%
+* Total number of goals: 47
+* Number of covered goals: 45
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 96%
+* Total number of goals: 49
+* Number of covered goals: 47
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 4
+* Number of covered goals: 4
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 93%
+* Total number of goals: 323
+* Number of covered goals: 299
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 50%
+* Total number of goals: 8
+* Number of covered goals: 4
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 6
+* Number of covered goals: 6
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 6
+* Number of covered goals: 6
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 96%
+* Total number of goals: 49
+* Number of covered goals: 47
+* Generated 12 tests with total length 242
+* Resulting test suite's coverage: 91% (average coverage for all fitness functions)
+* Generating assertions
+[MASTER] 21:50:33.023 [pool-2-thread-1] WARN  SimpleMutationAssertionGenerator - Reached maximum time to generate assertions, aborting assertion generation
+* Resulting test suite's mutation score: 0%
+* Compiling and checking tests
+[MASTER] 21:50:39.600 [pool-2-thread-1] WARN  TimeController - Current phase WRITING_TESTS could run up to 9s, but only 5s are left
+* Writing JUnit test case 'Life_ESTest' to F:\NOS_SHARE\casca\Projects\GitRepos\CS362-001-U2017\projects\schmidtm\assignment-1\cs362\.evosuite\tmp_2017_07_02_21_48_42\tests
+* Done!
+

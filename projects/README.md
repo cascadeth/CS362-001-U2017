@@ -1,2 +1,2 @@
-The projects directory should contains your onid folder
+The projects directory contains my onid folder
 
