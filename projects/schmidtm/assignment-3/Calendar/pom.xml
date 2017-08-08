@@ -73,11 +73,14 @@
             <plugin>
                 <groupId>org.pitest</groupId>
                 <artifactId>pitest-maven</artifactId>
-                <version>1.2.0</version>
+                <version>1.2.2</version>
                 <configuration>
-                    <avoidCallsTo><!--A List of packages, classes and methods which are to be considered outside the scope of mutation.-->
-                        <avoidCallsTo>java.io.PrintStream</avoidCallsTo>
-                    </avoidCallsTo>
+                    <targetClasses>
+                        <param>calendar.*</param>
+                    </targetClasses>
+                    <targetTests>
+                        <param>calendar.*</param>
+                    </targetTests>
                 </configuration>
             </plugin>
             <plugin>

@@ -1,0 +1,279 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1mBuilding Calendar 1.0-SNAPSHOT[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mpitest-maven:1.2.2:mutationCoverage[m [1m(default-cli)[m @ [36mCalendar[0;1m ---[m
+[[1;34mINFO[m] Found plugin : Default csv report plugin
+[[1;34mINFO[m] Found plugin : Default xml report plugin
+[[1;34mINFO[m] Found plugin : Default html report plugin
+[[1;34mINFO[m] Found plugin : Default limit mutations plugin
+[[1;34mINFO[m] Found plugin : Kotlin junk mutations filter
+[[1;34mINFO[m] Found plugin : Static initializer code detector plugin
+[[1;34mINFO[m] Found plugin : Static initializer filter plugin
+[[1;34mINFO[m] Found plugin : Excluded annotations plugin
+[[1;34mINFO[m] Found plugin : Inlined finally block filter plugin
+[[1;34mINFO[m] Found plugin : Try with resources filter
+[[1;34mINFO[m] Found plugin : Logging calls filter
+[[1;34mINFO[m] Found plugin : Infinite for loop filter
+[[1;34mINFO[m] Found plugin : Long running iterator loop filter
+[[1;34mINFO[m] Found shared classpath plugin : Default mutation engine
+[[1;34mINFO[m] Adding org.pitest:pitest to SUT classpath
+[[1;34mINFO[m] Mutating from H:\NOS_SHARE\casca\Projects\GitRepos\CS362-001-U2017\projects\schmidtm\assignment-3\Calendar\target\classes
+8:37:32 PM PIT >> INFO : Verbose logging is disabled. If you encounter an problem please enable it before reporting an issue.
+8:37:32 PM PIT >> INFO : Sending 9 test classes to minion
+8:37:32 PM PIT >> INFO : Sent tests to minion
+8:37:33 PM PIT >> INFO : MINION : 8:37:32 PM PIT >> INFO : Checking environment
+
+8:37:33 PM PIT >> INFO : MINION : 8:37:33 PM PIT >> INFO : Found  14 tests
+
+8:37:33 PM PIT >> INFO : MINION : 8:37:33 PM PIT >> INFO : Dependency analysis reduced number of potential tests by 0
+
+8:37:33 PM PIT >> INFO : MINION : 8:37:33 PM PIT >> INFO : 14 tests received
+
+8:37:34 PM PIT >> INFO : MINION : 8:37:34 PM PIT >> SEVERE : Error while running adapter JUnit fixture class calendar.Appt_ESTest with filter org.pitest.functional.Option$None@34612ba9
+org.pitest.util.PitError:  : only whitespace content allowed before start tag and not j (position: START
+8:37:34 PM PIT >> INFO : MINION : _DOCUMENT seen j... @1:1) 
+
+Please copy and paste the information and the complete stacktrace below when reporting an issue
+VM : Java HotSpot(TM) 64-Bit Server VM
+Vendor : Oracle Corporation
+Version : 25.141-b15
+Uptime : 1621
+Input -> 
+ 1 : -javaagent:C:\U
+8:37:34 PM PIT >> INFO : MINION : sers\casca\AppData\Local\Temp\1502163452362084479348875533717535098388956736380.jar
+ 2 : -Dclassworlds.conf=H:/Apache/maven/apache-maven-3.5.0/bin/m2.conf
+ 3 : -Dmaven.home=H:/Apache/maven/apache-maven-3.5.0
+ 4 : -Dmaven.multiModuleProjectDirectory=H:/NOS_
+8:37:34 PM PIT >> INFO : MINION : SHARE/casca/Projects/GitRepos/CS362-001-U2017/projects/schmidtm/assignment-3/Calendar
+BootClassPathSupported : true
+
+	at org.pitest.util.Unchecked.translateCheckedException(Unchecked.java:20)
+	at org.pitest.junit.adapter.AdaptedJUnitTestUnit.executeInDif
+8:37:34 PM PIT >> INFO : MINION : ferentClassLoader(AdaptedJUnitTestUnit.java:153)
+	at org.pitest.junit.adapter.AdaptedJUnitTestUnit.execute(AdaptedJUnitTestUnit.java:80)
+	at org.pitest.coverage.execute.CoverageDecorator.execute(CoverageDecorator.java:50)
+	at org.pitest.testapi.execute.
+8:37:34 PM PIT >> INFO : MINION : containers.UnContainer.execute(UnContainer.java:32)
+	at org.pitest.testapi.execute.Pitest.executeTests(Pitest.java:59)
+	at org.pitest.testapi.execute.Pitest.run(Pitest.java:50)
+	at org.pitest.coverage.execute.CoverageWorker.run(CoverageWorker.java:52)
+
+8:37:34 PM PIT >> INFO : MINION : 	at org.pitest.coverage.execute.CoverageMinion.main(CoverageMinion.java:91)
+Caused by: org.pitest.reloc.xstream.io.StreamException:  : only whitespace content allowed before start tag and not j (position: START_DOCUMENT seen j... @1:1) 
+	at org.pitest.re
+8:37:34 PM PIT >> INFO : MINION : loc.xstream.io.xml.XppReader.pullNextEvent(XppReader.java:124)
+	at org.pitest.reloc.xstream.io.xml.AbstractPullReader.readRealEvent(AbstractPullReader.java:148)
+	at org.pitest.reloc.xstream.io.xml.AbstractPullReader.readEvent(AbstractPullReader.java:141)
+8:37:34 PM PIT >> INFO : MINION : 
+	at org.pitest.reloc.xstream.io.xml.AbstractPullReader.move(AbstractPullReader.java:118)
+	at org.pitest.reloc.xstream.io.xml.AbstractPullReader.moveDown(AbstractPullReader.java:103)
+	at org.pitest.reloc.xstream.io.xml.XppReader.<init>(XppReader.java:63
+8:37:34 PM PIT >> INFO : MINION : )
+	at org.pitest.reloc.xstream.io.xml.AbstractXppDriver.createReader(AbstractXppDriver.java:54)
+	at org.pitest.reloc.xstream.XStream.fromXML(XStream.java:1061)
+	at org.pitest.reloc.xstream.XStream.fromXML(XStream.java:1052)
+	at org.pitest.util.Isolatio
+8:37:34 PM PIT >> INFO : MINION : nUtils.fromXml(IsolationUtils.java:124)
+	at org.pitest.testapi.foreignclassloader.Events.applyEvents(Events.java:17)
+	at org.pitest.junit.adapter.AdaptedJUnitTestUnit.convertStringsToResults(AdaptedJUnitTestUnit.java:160)
+	at org.pitest.junit.adapter.Ad
+8:37:34 PM PIT >> INFO : MINION : aptedJUnitTestUnit.executeInDifferentClassLoader(AdaptedJUnitTestUnit.java:151)
+	... 7 more
+Caused by: org.pitest.reloc.xmlpull.v1.XmlPullParserException: only whitespace content allowed before start tag and not j (position: START_DOCUMENT seen j... @1:1
+8:37:34 PM PIT >> INFO : MINION : ) 
+	at org.pitest.reloc.xmlpull.mxp1.MXParser.parseProlog(MXParser.java:1519)
+	at org.pitest.reloc.xmlpull.mxp1.MXParser.nextImpl(MXParser.java:1395)
+	at org.pitest.reloc.xmlpull.mxp1.MXParser.next(MXParser.java:1093)
+	at org.pitest.reloc.xstream.io.xm
+8:37:34 PM PIT >> INFO : MINION : l.XppReader.pullNextEvent(XppReader.java:109)
+	... 19 more
+
+8:37:34 PM PIT >> INFO : MINION : 8:37:34 PM PIT >> SEVERE : Error calculating coverage. Process will exit.
+org.pitest.util.PitError:  : only whitespace content allowed before start tag and not j (position: START_DOCUMENT seen j... @1:1) 
+
+Please copy and paste the information and the com
+8:37:34 PM PIT >> INFO : MINION : plete stacktrace below when reporting an issue
+VM : Java HotSpot(TM) 64-Bit Server VM
+Vendor : Oracle Corporation
+Version : 25.141-b15
+Uptime : 1621
+Input -> 
+ 1 : -javaagent:C:\Users\casca\AppData\Local\Temp\15021634523620844793488755337175350983889567363
+8:37:34 PM PIT >> INFO : MINION : 80.jar
+ 2 : -Dclassworlds.conf=H:/Apache/maven/apache-maven-3.5.0/bin/m2.conf
+ 3 : -Dmaven.home=H:/Apache/maven/apache-maven-3.5.0
+ 4 : -Dmaven.multiModuleProjectDirectory=H:/NOS_SHARE/casca/Projects/GitRepos/CS362-001-U2017/projects/schmidtm/assignment-3/
+8:37:34 PM PIT >> INFO : MINION : Calendar
+BootClassPathSupported : true
+
+
+Please copy and paste the information and the complete stacktrace below when reporting an issue
+VM : Java HotSpot(TM) 64-Bit Server VM
+Vendor : Oracle Corporation
+Version : 25.141-b15
+Uptime : 1622
+Input -> 
+ 1 : -j
+8:37:34 PM PIT >> INFO : MINION : avaagent:C:\Users\casca\AppData\Local\Temp\1502163452362084479348875533717535098388956736380.jar
+ 2 : -Dclassworlds.conf=H:/Apache/maven/apache-maven-3.5.0/bin/m2.conf
+ 3 : -Dmaven.home=H:/Apache/maven/apache-maven-3.5.0
+ 4 : -Dmaven.multiModuleProjectDire
+8:37:34 PM PIT >> INFO : MINION : ctory=H:/NOS_SHARE/casca/Projects/GitRepos/CS362-001-U2017/projects/schmidtm/assignment-3/Calendar
+BootClassPathSupported : true
+
+
+Please copy and paste the information and the complete stacktrace below when reporting an issue
+VM : Java HotSpot(TM) 64-Bit 
+8:37:34 PM PIT >> INFO : MINION : Server VM
+Vendor : Oracle Corporation
+Version : 25.141-b15
+Uptime : 1622
+Input -> 
+ 1 : -javaagent:C:\Users\casca\AppData\Local\Temp\1502163452362084479348875533717535098388956736380.jar
+ 2 : -Dclassworlds.conf=H:/Apache/maven/apache-maven-3.5.0/bin/m2.con
+8:37:34 PM PIT >> INFO : MINION : f
+ 3 : -Dmaven.home=H:/Apache/maven/apache-maven-3.5.0
+ 4 : -Dmaven.multiModuleProjectDirectory=H:/NOS_SHARE/casca/Projects/GitRepos/CS362-001-U2017/projects/schmidtm/assignment-3/Calendar
+BootClassPathSupported : true
+
+	at org.pitest.util.Unchecked.trans
+8:37:34 PM PIT >> INFO : MINION : lateCheckedException(Unchecked.java:20)
+	at org.pitest.coverage.execute.CoverageWorker.run(CoverageWorker.java:55)
+	at org.pitest.coverage.execute.CoverageMinion.main(CoverageMinion.java:91)
+Caused by: org.pitest.util.PitError:  : only whitespace conten
+8:37:34 PM PIT >> INFO : MINION : t allowed before start tag and not j (position: START_DOCUMENT seen j... @1:1) 
+
+Please copy and paste the information and the complete stacktrace below when reporting an issue
+VM : Java HotSpot(TM) 64-Bit Server VM
+Vendor : Oracle Corporation
+Version : 25
+8:37:34 PM PIT >> INFO : MINION : .141-b15
+Uptime : 1621
+Input -> 
+ 1 : -javaagent:C:\Users\casca\AppData\Local\Temp\1502163452362084479348875533717535098388956736380.jar
+ 2 : -Dclassworlds.conf=H:/Apache/maven/apache-maven-3.5.0/bin/m2.conf
+ 3 : -Dmaven.home=H:/Apache/maven/apache-maven-3
+8:37:34 PM PIT >> INFO : MINION : .5.0
+ 4 : -Dmaven.multiModuleProjectDirectory=H:/NOS_SHARE/casca/Projects/GitRepos/CS362-001-U2017/projects/schmidtm/assignment-3/Calendar
+BootClassPathSupported : true
+
+
+Please copy and paste the information and the complete stacktrace below when reportin
+8:37:34 PM PIT >> INFO : MINION : g an issue
+VM : Java HotSpot(TM) 64-Bit Server VM
+Vendor : Oracle Corporation
+Version : 25.141-b15
+Uptime : 1622
+Input -> 
+ 1 : -javaagent:C:\Users\casca\AppData\Local\Temp\1502163452362084479348875533717535098388956736380.jar
+ 2 : -Dclassworlds.conf=H:/Ap
+8:37:34 PM PIT >> INFO : MINION : ache/maven/apache-maven-3.5.0/bin/m2.conf
+ 3 : -Dmaven.home=H:/Apache/maven/apache-maven-3.5.0
+ 4 : -Dmaven.multiModuleProjectDirectory=H:/NOS_SHARE/casca/Projects/GitRepos/CS362-001-U2017/projects/schmidtm/assignment-3/Calendar
+BootClassPathSupported : tr
+8:37:34 PM PIT >> INFO : MINION : ue
+
+	at org.pitest.util.Unchecked.translateCheckedException(Unchecked.java:20)
+	at org.pitest.junit.adapter.AdaptedJUnitTestUnit.execute(AdaptedJUnitTestUnit.java:91)
+	at org.pitest.coverage.execute.CoverageDecorator.execute(CoverageDecorator.java:50)
+
+8:37:34 PM PIT >> INFO : MINION : 	at org.pitest.testapi.execute.containers.UnContainer.execute(UnContainer.java:32)
+	at org.pitest.testapi.execute.Pitest.executeTests(Pitest.java:59)
+	at org.pitest.testapi.execute.Pitest.run(Pitest.java:50)
+	at org.pitest.coverage.execute.CoverageWorke
+8:37:34 PM PIT >> INFO : MINION : r.run(CoverageWorker.java:52)
+	... 1 more
+Caused by: org.pitest.util.PitError:  : only whitespace content allowed before start tag and not j (position: START_DOCUMENT seen j... @1:1) 
+
+Please copy and paste the information and the complete stacktrace bel
+8:37:34 PM PIT >> INFO : MINION : ow when reporting an issue
+VM : Java HotSpot(TM) 64-Bit Server VM
+Vendor : Oracle Corporation
+Version : 25.141-b15
+Uptime : 1621
+Input -> 
+ 1 : -javaagent:C:\Users\casca\AppData\Local\Temp\1502163452362084479348875533717535098388956736380.jar
+ 2 : -Dclassw
+8:37:34 PM PIT >> INFO : MINION : orlds.conf=H:/Apache/maven/apache-maven-3.5.0/bin/m2.conf
+ 3 : -Dmaven.home=H:/Apache/maven/apache-maven-3.5.0
+ 4 : -Dmaven.multiModuleProjectDirectory=H:/NOS_SHARE/casca/Projects/GitRepos/CS362-001-U2017/projects/schmidtm/assignment-3/Calendar
+BootClassPa
+8:37:34 PM PIT >> INFO : MINION : thSupported : true
+
+	at org.pitest.util.Unchecked.translateCheckedException(Unchecked.java:20)
+	at org.pitest.junit.adapter.AdaptedJUnitTestUnit.executeInDifferentClassLoader(AdaptedJUnitTestUnit.java:153)
+	at org.pitest.junit.adapter.AdaptedJUnitTestUn
+8:37:34 PM PIT >> INFO : MINION : it.execute(AdaptedJUnitTestUnit.java:80)
+	... 6 more
+Caused by: org.pitest.reloc.xstream.io.StreamException:  : only whitespace content allowed before start tag and not j (position: START_DOCUMENT seen j... @1:1) 
+	at org.pitest.reloc.xstream.io.xml.Xpp
+8:37:34 PM PIT >> INFO : MINION : Reader.pullNextEvent(XppReader.java:124)
+	at org.pitest.reloc.xstream.io.xml.AbstractPullReader.readRealEvent(AbstractPullReader.java:148)
+	at org.pitest.reloc.xstream.io.xml.AbstractPullReader.readEvent(AbstractPullReader.java:141)
+	at org.pitest.reloc
+8:37:34 PM PIT >> INFO : MINION : .xstream.io.xml.AbstractPullReader.move(AbstractPullReader.java:118)
+	at org.pitest.reloc.xstream.io.xml.AbstractPullReader.moveDown(AbstractPullReader.java:103)
+	at org.pitest.reloc.xstream.io.xml.XppReader.<init>(XppReader.java:63)
+	at org.pitest.relo
+8:37:34 PM PIT >> INFO : MINION : c.xstream.io.xml.AbstractXppDriver.createReader(AbstractXppDriver.java:54)
+	at org.pitest.reloc.xstream.XStream.fromXML(XStream.java:1061)
+	at org.pitest.reloc.xstream.XStream.fromXML(XStream.java:1052)
+	at org.pitest.util.IsolationUtils.fromXml(Isolati
+8:37:34 PM PIT >> INFO : MINION : onUtils.java:124)
+	at org.pitest.testapi.foreignclassloader.Events.applyEvents(Events.java:17)
+	at org.pitest.junit.adapter.AdaptedJUnitTestUnit.convertStringsToResults(AdaptedJUnitTestUnit.java:160)
+	at org.pitest.junit.adapter.AdaptedJUnitTestUnit.exe
+8:37:34 PM PIT >> INFO : MINION : cuteInDifferentClassLoader(AdaptedJUnitTestUnit.java:151)
+	... 7 more
+Caused by: org.pitest.reloc.xmlpull.v1.XmlPullParserException: only whitespace content allowed before start tag and not j (position: START_DOCUMENT seen j... @1:1) 
+	at org.pitest.rel
+8:37:34 PM PIT >> INFO : MINION : oc.xmlpull.mxp1.MXParser.parseProlog(MXParser.java:1519)
+	at org.pitest.reloc.xmlpull.mxp1.MXParser.nextImpl(MXParser.java:1395)
+	at org.pitest.reloc.xmlpull.mxp1.MXParser.next(MXParser.java:1093)
+	at org.pitest.reloc.xstream.io.xml.XppReader.pullNextEv
+8:37:34 PM PIT >> INFO : MINION : ent(XppReader.java:109)
+	... 19 more
+
+8:37:34 PM PIT >> SEVERE : Coverage generator Minion exited abnormally due to UNKNOWN_ERROR
+/-[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;31mBUILD FAILURE[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time: 2.885 s
+[[1;34mINFO[m] Finished at: 2017-08-07T20:37:34-07:00
+[[1;34mINFO[m] Final Memory: 15M/322M
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;31mERROR[m] Failed to execute goal [32morg.pitest:pitest-maven:1.2.2:mutationCoverage[m [1m(default-cli)[m on project [36mCalendar[m: [1;31mExecution default-cli of goal org.pitest:pitest-maven:1.2.2:mutationCoverage failed: Coverage generation minion exited abnormally![m
+[[1;31mERROR[m] [1;31m[m
+[[1;31mERROR[m] [1;31mPlease copy and paste the information and the complete stacktrace below when reporting an issue[m
+[[1;31mERROR[m] [1;31mVM : Java HotSpot(TM) 64-Bit Server VM[m
+[[1;31mERROR[m] [1;31mVendor : Oracle Corporation[m
+[[1;31mERROR[m] [1;31mVersion : 25.141-b15[m
+[[1;31mERROR[m] [1;31mUptime : 3534[m
+[[1;31mERROR[m] [1;31mInput -> [m
+[[1;31mERROR[m] [1;31m 1 : -Dclassworlds.conf=H:/Apache/maven/apache-maven-3.5.0/bin/m2.conf[m
+[[1;31mERROR[m] [1;31m 2 : -Dmaven.home=H:/Apache/maven/apache-maven-3.5.0[m
+[[1;31mERROR[m] [1;31m 3 : -Dmaven.multiModuleProjectDirectory=H:/NOS_SHARE/casca/Projects/GitRepos/CS362-001-U2017/projects/schmidtm/assignment-3/Calendar[m
+[[1;31mERROR[m] [1;31mBootClassPathSupported : true[m
+[[1;31mERROR[m] [1;31m[m
+[[1;31mERROR[m] [1;31m[m
+[[1;31mERROR[m] [1;31mPlease copy and paste the information and the complete stacktrace below when reporting an issue[m
+[[1;31mERROR[m] [1;31mVM : Java HotSpot(TM) 64-Bit Server VM[m
+[[1;31mERROR[m] [1;31mVendor : Oracle Corporation[m
+[[1;31mERROR[m] [1;31mVersion : 25.141-b15[m
+[[1;31mERROR[m] [1;31mUptime : 3534[m
+[[1;31mERROR[m] [1;31mInput -> [m
+[[1;31mERROR[m] [1;31m 1 : -Dclassworlds.conf=H:/Apache/maven/apache-maven-3.5.0/bin/m2.conf[m
+[[1;31mERROR[m] [1;31m 2 : -Dmaven.home=H:/Apache/maven/apache-maven-3.5.0[m
+[[1;31mERROR[m] [1;31m 3 : -Dmaven.multiModuleProjectDirectory=H:/NOS_SHARE/casca/Projects/GitRepos/CS362-001-U2017/projects/schmidtm/assignment-3/Calendar[m
+[[1;31mERROR[m] [1;31mBootClassPathSupported : true[m
+[[1;31mERROR[m] [1;31m[m
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/PluginExecutionException
